@@ -1,24 +1,3 @@
-# CatHelp Documentation
-
-[Live Demo](https://cat-help.vercel.app/)
-
-![HelpCat](public/app.png)
-
-![Login](public/login.png)
-
-## Specs
-
-|     | Specs                                                                                                                |
-| --- | -------------------------------------------------------------------------------------------------------------------- |
-| ✨  | **Next.js** The most fresh technology to frontend built with React.                                             |
-| 🔓  | **Web3.js** Handy Dandy library for Blockchain operations.                    |
-| 🧙🏼‍♀️  | **TypeScript** typed programming language that builds on JavaScript.                                                                                          |
-| 🌬️   | **Tailwind** A utility-first CSS framework for building fast and powerful interfaces.|
-
-## Solidity Contract
-
-[CatHelp.sol](public/CatHelp.sol)
-```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.24;
 
@@ -28,13 +7,11 @@ struct Request {
     string title;
     string description;
     string contact;
-    uint timestamp;//quantidade de segundos de 1/1/1970 até hoje
-    uint goal;//wei
+    uint timestamp;
+    uint goal;
     uint balance;
     bool open;
 }
-
-
 contract CatHelp {
     uint public lastId = 0;
     mapping(uint=>Request) public requests;
@@ -53,7 +30,6 @@ contract CatHelp {
             open: true
         });
     }
-
     function closeRequest (uint id) public {
         address author = requests[id].author;
         uint balance = requests[id].balance;
@@ -65,7 +41,7 @@ contract CatHelp {
         if (balance > 0) {
             requests[id].balance = 0;
             payable(author).transfer(balance);
-        }   
+        }
     }
 
     function donate(uint id) public payable{
@@ -83,26 +59,9 @@ contract CatHelp {
                 result[count] = requests[id];
                 count++;
             }
-
             id++;
         }
         while(count<quantity && id <= lastId);
-        
         return result;
-
 }
 }
-```
-
-## Features
-
-|     | Features                                                                                                             |
-| --- | -------------------------------------------------------------------------------------------------------------------- |
-| ✅  | Metamask user login                                     |
-| ✅  | List of Help Requests                                                    |
-| ✅  | Open Requests, Donate to an Existent Request, Close Request                                           |
-
-## Contact
-
-- **Maintainer:** Alexandre Fonseca
-- **Email:** alexandrefonsecach@gmail.com
