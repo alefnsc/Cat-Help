@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:body {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 150, 150, 150;
+  --background-end-rgb: 255, 255, 255;
+}
