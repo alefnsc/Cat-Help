@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# CatHelp Documentation
 
-## Getting Started
+[Live Demo](https://cat-help.vercel.app/)
 
-First, run the development server:
+![HelpCat](public/app.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![Login](public/login.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Specs
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+|     | Specs                                                                                                                |
+| --- | -------------------------------------------------------------------------------------------------------------------- |
+| ✨  | **Next.js** The most fresh technology to frontend built with React.                                             |
+| 🔓  | **Web3.js** Handy Dandy library for Blockchain operations.                    |
+| 🧙🏼‍♀️  | **TypeScript** typed programming language that builds on JavaScript.                                                                                          |
+| 🌬️   | **Tailwind** A utility-first CSS framework for building fast and powerful interfaces.|
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+## Features
 
-To learn more about Next.js, take a look at the following resources:
+|     | Features                                                                                                             |
+| --- | -------------------------------------------------------------------------------------------------------------------- |
+| ✅  | Metamask user login                                     |
+| ✅  | List of Help Requests                                                    |
+| ✅  | Open Requests, Donate to an Existent Request, Close Request                                           |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- **Maintainer:** Alexandre Fonseca
+- **Email:** alexandrefonsecach@gmail.com
